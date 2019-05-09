@@ -4,6 +4,8 @@
 
   def about
   	#render('pages/home')
+  	@id = params['id'].to_i
+  	@page = params[:page].to_i
   end
 
 

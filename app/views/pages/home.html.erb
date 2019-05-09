@@ -18,7 +18,12 @@
 <%=  link_to("page about 2", {:controller => 'pages', :action => 'about'}) %>
 <br>
 <%=  link_to("page about 3", {:action => 'about'}) %>
+<br>
  
+ <%=  link_to("link with parameters", {:controller => 'pages', :action => 'about', :page => 5, :id => 20}) %>
 
-
-
+<br>
+ID: <%= params[:id] %>  <br>
+ID: <%= @id  %>  <br>
+page: <%= @page %> <br>
+page: <%= params[:page] %>  <br>
