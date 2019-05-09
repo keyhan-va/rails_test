@@ -10,11 +10,15 @@
 <%= "xxx" %>
 <% end %>
 
-<br>
-<%=  link_to("page about", "about") %> 
-<br>
-<%=  link_to("page about 2", {:action => 'about'}) %>
 
+
+<br>
+<%=  link_to("page about 1", "/pages/about" ) %>
+<br>
+<%=  link_to("page about 2", {:controller => 'pages', :action => 'about'}) %>
+<br>
+<%=  link_to("page about 3", {:action => 'about'}) %>
+ 
 
 
 
